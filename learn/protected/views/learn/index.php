@@ -1,4 +1,3 @@
-
 <h1>My Accounts Page</h1>
 
 <div class="container myaccount">
@@ -8,29 +7,30 @@
         <p>Smart move! You’ve just made a difference to your professional life while earning some money.</p>
     </div>
     <div class="row">
-        <form class="form-horizontal">
+        <!--<form class="form-horizontal">-->
+		<?php echo CHtml::beginForm('','post',array('class' => 'form-horizontal')); ?>
             <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
+                    <input type="text" class="form-control" id="inputEmail3" name="Learn['name'] placeholder="Name">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Designation</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="Designation">
+                    <input type="text" class="form-control" id="inputPassword3" name="Learn['designation']  placeholder="Designation">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputCompany" class="col-sm-2 control-label">Company</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                    <input type="text" class="form-control" id="inputCompany" name="Learn['company'] placeholder="Company">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Total Exp</label>
                 <div class="col-sm-8">
-                    <select class="form-control">
+                    <select class="form-control" name="Learn['exp'] >
                         <option value="-1">Select Exp</option>
                         <option value="1">1 Years</option>
                         <option value="2">1 Years</option>
@@ -50,7 +50,7 @@
             <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Skills</label>
                 <div class="col-sm-8">
-                    <select id="example-getting-started" multiple="multiple" display="none">
+                    <select id="example-getting-started" name="Learn['skills']  multiple="multiple" display="none">
                         <option value="1">C++</option>
                         <option value="2">Unix</option>
                         <option value="3">PHP</option>
@@ -108,10 +108,15 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-8">
+					<input type="hidden" name="Learn['submit']" value="submit"/>
                     <button type="submit" class="btn btn-default">Signup as Trainer</button>
                 </div>
             </div>
-        </form>
+		
+	
+        <!--</form>-->		 
+		<?php echo CHtml::endForm(); ?>
+		
     </div>
 
 </div>

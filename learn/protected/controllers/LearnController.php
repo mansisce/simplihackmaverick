@@ -63,8 +63,12 @@ class LearnController extends Controller
 	 */
 	public function actionEvaluate()
 	{
-        echo "i am in the eview";;
-        exit();
+        //echo "eview";;
+        // exit();
+		$this->layout='learn';
+		$this->render('evaluate',array()); 		
+		
+		/*
 		$post=$this->loadModel();
 		$comment=$this->newComment($post);
 
@@ -72,6 +76,7 @@ class LearnController extends Controller
 			'model'=>$post,
 			'comment'=>$comment,
 		));
+		*/
 	}
     
     
@@ -220,9 +225,8 @@ class LearnController extends Controller
 	 */
 	public function actionIndex()
 	{
-		//$this->actionTrain();	
-		//echo(" Hi i am here");
-		//die();
+		//echo "Action Index";
+		$this->layout='trainlearn';
 		/*
 		$criteria=new CDbCriteria(array(
 			'condition'=>'status='.Learn::STATUS_PUBLISHED,
@@ -238,9 +242,25 @@ class LearnController extends Controller
 			),
 			'criteria'=>$criteria,
 		));
-        */
 
 		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
+		*/
+		
+		
+		//print_r($_POST);exit;
+		
+		if(isset($_POST['Learn']))
+		{
+			//$model->attributes=$_POST['Learn'];
+			//if($model->save())
+			$this->redirect("?r=learn/evaluate");
+		}
+		
+		
+		$this->render('index',array(
+
 		));
 	}
 
