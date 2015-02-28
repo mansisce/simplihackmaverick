@@ -221,9 +221,9 @@ class LearnController extends Controller
 	public function actionIndex()
 	{
 		//$this->actionTrain();	
-		echo(" Hi i am here");
-		die();
-		
+		//echo(" Hi i am here");
+		//die();
+		/*
 		$criteria=new CDbCriteria(array(
 			'condition'=>'status='.Learn::STATUS_PUBLISHED,
 			'order'=>'update_time DESC',
@@ -238,9 +238,9 @@ class LearnController extends Controller
 			),
 			'criteria'=>$criteria,
 		));
+        */
 
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
 		));
 	}
 
