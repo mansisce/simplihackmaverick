@@ -64,7 +64,12 @@ return array(
 				'post/<id:\d+>/<title:.*?>'=>'learn/view',
                 */
 				'myaccount'=>'learn/index',				
-				'evaluate'=>'learn/evaluate',                
+				'evaluate'=>'learn/evaluate',               
+                'confirmation'=>'learn/confirmation', 
+                'registration'=>'learn/registration',
+                'linkedin'=>'learn/login',
+                 'enroll'=>'learn/enroll',   
+                'allotment'=>'learn/allotment',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),

@@ -73,7 +73,61 @@ class LearnController extends Controller
 			'comment'=>$comment,
 		));
 	}
-	    
+    
+    
+    	/**
+	 * Displays a particular model.
+	 */
+	public function actionConfirmation()
+	{
+        echo "i am in the Cview";;
+        exit();
+        
+    }
+    
+    	/**
+	 * Displays a particular model.
+	 */
+	public function actionRegistration()
+	{
+        echo "i am in the Rview";;
+        exit();
+        
+    }
+    
+    
+        	/**
+	 * Displays a particular model.
+	 */
+	public function actionLinkedin()
+	{
+        echo "i am in the Lview";;
+        exit();
+        
+    }
+    
+    
+        	/**
+	 * Displays a particular model.
+	 */
+	public function actionEnroll()
+	{
+        echo "i am in the Enrollview";;
+        exit();
+        
+    }
+    
+    
+        	/**
+	 * Displays a particular model.
+	 */
+	public function actionAllotment()
+	{
+        echo "i am in the Allotment view";;
+        exit();
+        
+    }
+        
 	
 	
 	/**
