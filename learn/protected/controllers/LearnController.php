@@ -47,6 +47,8 @@ class LearnController extends Controller
 	 */
 	public function actionView()
 	{
+        echo "i am in the view";;
+        exit();
 		$post=$this->loadModel();
 		$comment=$this->newComment($post);
 
@@ -55,6 +57,23 @@ class LearnController extends Controller
 			'comment'=>$comment,
 		));
 	}
+    
+	/**
+	 * Displays a particular model.
+	 */
+	public function actionEvaluate()
+	{
+        echo "i am in the eview";;
+        exit();
+		$post=$this->loadModel();
+		$comment=$this->newComment($post);
+
+		$this->render('view',array(
+			'model'=>$post,
+			'comment'=>$comment,
+		));
+	}
+	    
 	
 	
 	/**
@@ -63,7 +82,12 @@ class LearnController extends Controller
 	 */
 	public function actionTrain($uid = 12)
 	{
-		$user=User::model()->findByPk($uid);
+        echo "hi ia m here";
+		//$user=User::model()->findByPk($uid);
+        $this->redirect(array('view'));
+        $this->redirect(array('view','id'=>$model->id));
+        exit();
+        
 		print_r($user);exit;
 		
 		if(isset($_POST['Learn']))
@@ -142,7 +166,7 @@ class LearnController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->actionTrain();	
+		//$this->actionTrain();	
 		echo(" Hi i am here");
 		die();
 		

@@ -59,11 +59,12 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
-			    'learn/train'=>'learn/train',
-				/*
-				'post/<id:\d+>/<title:.*?>'=>'post/view',
-				'posts/<tag:.*?>'=>'post/index',
-				*/
+                /*
+			    'learn/train'=>'learn/train',				
+				'post/<id:\d+>/<title:.*?>'=>'learn/view',
+                */
+				'myaccount'=>'learn/index',				
+				'evaluate'=>'learn/evaluate',                
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
