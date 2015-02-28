@@ -90,9 +90,9 @@ class LearnController extends Controller
 	 */
 	public function actionRegistration()
 	{
-        echo "i am in the Rview";;
+        echo "i am in the Rview";
+		$this->render('registration',array());   
         exit();
-        
     }
     
     
