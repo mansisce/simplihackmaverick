@@ -103,11 +103,41 @@ class LearnController extends Controller
 	 */
 	public function actionRegistration()
 	{
-        echo "i am in the Rview";
 		$this->render('registration',array());   
         exit();
     }
     
+    	/**
+	 * Displays a particular model.
+	 */
+	public function actionResult()
+	{
+        /*
+        echo "i am in the result page ";
+        print("<pre>");
+        print_r($_POST['Learn']);
+        print("</pre>");        
+        */
+        $score = 0;
+        foreach( $_POST['Learn'] as $key => $value ) {
+            switch($value){
+                case "0":                    
+                break;
+                case "1" :
+                $score++;
+                break;
+            }
+        }
+        
+        if($score>=3){
+            $this->render('result',array());   
+        }
+        else{
+            $this->render('fail',array());               
+        }
+        exit();
+    }
+        
     
         	/**
 	 * Displays a particular model.
@@ -115,8 +145,7 @@ class LearnController extends Controller
 	public function actionLinkedin()
 	{
         echo "i am in the Lview";;
-        exit();
-        
+        exit();        
     }
     
     

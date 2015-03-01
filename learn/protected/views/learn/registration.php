@@ -3,12 +3,12 @@
 
         <div class="coursetype">
 
-            <div>
+            <div style="cursor:pointer">
                 Classroom training<span></span>
             </div>
 
-            <div>
-                Online Self Learning
+            <div  style="cursor:pointer">
+                Online Self Learning<span></span>
             </div>
 
         </div>
@@ -26,24 +26,27 @@
         </nav>
 
         <div class="feature">
-            <img src="../../css/images/content.jpg" width="550px" height="" />
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/images/content.jpg"  width="550px" height="" />
             <div class="actionbuy">Buy Now</div>
-            <img src="../../css/images/about_course.jpg" width="" height="" />
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/images/about_course.jpg"  width="" height="" />
         </div>
 
         <div class="trainer">
             <div>
-                <img src="../../css/images/mentor.jpg" width="" height="" />
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/images/mentor.jpg"  width="" height="" />
             </div>
             <div>
-                <img src="../../css/images/trainer.jpg" width="" height="" />
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/images/trainer.jpg" width="" height="" />
             </div>
             <div>
-                <img src="../../css/images/sr.trainer.jpg" width="" height="" />
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/images/sr.trainer.jpg" width="" height="" />
             </div>
             <div>
-                <img src="../../css/images/super sr.trainer.jpg" width="" height="" />
+                <img  src="<?php echo Yii::app()->request->baseUrl; ?>/css/images/sr.trainer.jpg"   width="" height="" />
             </div>
         </div>
 
     </div>
+<script>
+
+</script>

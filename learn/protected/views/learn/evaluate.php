@@ -4,24 +4,25 @@
         <h2>Hey <?php echo '$model->username' ?>,</h2>
         <p>You are just one step away from becoming the most awesome trainer</p>
     </div>
-
+    <!--</form>-->
+    <?php echo CHtml::beginForm( 'index.php?r=learn/result', 'post',array( 'class'=>'form-horizontal')); ?>
     <div class="form-group">
 
         <label for="exampleInputEmail1">1. Theoretical question</label>
         <div class="radiogroup">
-        <label class="radio-inline">
-            <input type="radio" class="" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
+            <label class="radio-inline">
+                <input type="radio" class="" name="Learn['inlineRadioOptions']" id="inlineRadio1" value="1" />A
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions']" id="inlineRadio2" value="0" />B
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions']" id="inlineRadio3" value="0" />C
+            </label>
 
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions']" id="inlineRadio4" value="0" />D
+            </label>
         </div>
 
     </div>
@@ -29,188 +30,94 @@
     <div class="form-group">
 
         <label for="exampleInputEmail1">2. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
+        <div class="radiogroup">
 
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
+            <label class="radio-inline">
+                <input type="radio" class="" name="Learn['inlineRadioOptions_2']" id="inlineRadio1" value="1" />A
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_2']" id="inlineRadio2" value="0" />B
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_2']" id="inlineRadio3" value="0" />C
+            </label>
 
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_2']" id="inlineRadio4" value="0" />D
+            </label>
+        </div>
     </div>
 
     <div class="form-group">
 
         <label for="exampleInputEmail1">3. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
+        <div class="radiogroup">
 
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
+            <label class="radio-inline">
+                <input type="radio" class="" name="Learn['inlineRadioOptions_3']" id="inlineRadio1" value="1" />A
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_3']" id="inlineRadio2" value="0" />B
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_3']" id="inlineRadio3" value="0" />C
+            </label>
 
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_3']" id="inlineRadio4" value="0" />D
+            </label>
+        </div>
     </div>
 
 
     <div class="form-group">
 
         <label for="exampleInputEmail1">4. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
+        <div class="radiogroup">
 
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
+            <label class="radio-inline">
+                <input type="radio" class="" name="Learn['inlineRadioOptions_4']" id="inlineRadio1" value="1" />A
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_4']" id="inlineRadio2" value="0" />B
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_4']" id="inlineRadio3" value="0" />C
+            </label>
 
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_4']" id="inlineRadio4" value="0" />D
+            </label>
+        </div>
     </div>
 
 
     <div class="form-group">
 
         <label for="exampleInputEmail1">5. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
+        <div class="radiogroup">
+            <label class="radio-inline">
+                <input type="radio" class="" name="Learn['inlineRadioOptions_5']" id="inlineRadio1" value="1" />A
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_5']" id="inlineRadio2" value="0" />B
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_5']" id="inlineRadio3" value="0" />C
+            </label>
 
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
-
+            <label class="radio-inline">
+                <input type="radio" name="Learn['inlineRadioOptions_5']" id="inlineRadio4" value="0" />D
+            </label>
+        </div>
     </div>
-
 
     <div class="form-group">
-
-        <label for="exampleInputEmail1">6. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
-
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
-
+        <div class="col-sm-offset-2 col-sm-8">
+            <input type="hidden" name="Learn['submit']" value="submit" />
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
     </div>
-
-
-    <div class="form-group">
-
-        <label for="exampleInputEmail1">7. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
-
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
-
-    </div>
-
-
-    <div class="form-group">
-
-        <label for="exampleInputEmail1">8. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
-
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
-
-    </div>
-
-
-
-    <div class="form-group">
-
-        <label for="exampleInputEmail1">9. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
-
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
-
-    </div>
-
-
-    <div class="form-group">
-
-        <label for="exampleInputEmail1">10. Theoretical question</label>
-        <label class="radio-inline">
-            <input type="radio" class="form-control" name="inlineRadioOptions" id="inlineRadio1" value="option1" />A
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />B
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />C
-        </label>
-
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" />D
-        </label>
-
-    </div>
-
-    <div class="lower-container">
-
-
-
-
-        <span class="actionbuy">Submit</span>	
-    </div>
-
+    <!--</form>-->
+    <?php echo CHtml::endForm(); ?>
 </div>
