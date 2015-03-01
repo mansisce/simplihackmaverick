@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="row intro col-12">
-        <h2>Hey <?php echo '$model->username' ?>,</h2>
+        <h2>Hey Vijay,</h2>
         <p>You are just one step away from becoming the most awesome trainer</p>
     </div>
     <!--</form>-->
