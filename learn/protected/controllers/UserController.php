@@ -14,7 +14,7 @@ class UserController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+			//'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
@@ -33,11 +33,11 @@ class UserController extends Controller
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('*'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -78,6 +78,27 @@ class UserController extends Controller
 			'model'=>$model,
 		));
 	}
+    
+    public function actionSignup(){
+        $this->redirect('index.php?r=learn/evaluate'); 
+        return;
+        if(isset($_POST['User']))
+        {
+                        $model->attributes=$_POST['User'];
+
+            print("<pre");
+            print_r($_POST['User']);
+            print("</pre");
+            print("id is".$model->attributes->id);
+            //$id = $_POST['User']['id'];
+            $this->actionUpdate($model->attributes->id); 
+        }
+            else
+                        $this->render('update',array(
+                'model'=>$model,
+            ));
+            
+    }
 
 	/**
 	 * Updates a particular model.

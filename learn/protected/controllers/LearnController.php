@@ -63,7 +63,15 @@ class LearnController extends Controller
 	 */
 	public function actionEvaluate()
 	{
-        //echo "eview";;
+
+        /*exit();*/
+        if(isset($_POST['Learn']))
+		{
+			$model->attributes=$_POST['Learn'];
+			if($model->save())
+                $this->redirect(array('view','id'=>$model->id));
+		}
+
         // exit();
 		$this->layout='learn';
 		$this->render('evaluate',array()); 		
